@@ -41,7 +41,7 @@ function AddtoFav(req, res) {
   let { email, image, price, name } = req.body;
   Favfruitsmodule.create({ email, image, price, name })
     .then(function (Favdata) {
-      //   console.log(Favdata);
+        console.log({Favdata});
     })
     .catch(function (err) {
       console.log(err);
